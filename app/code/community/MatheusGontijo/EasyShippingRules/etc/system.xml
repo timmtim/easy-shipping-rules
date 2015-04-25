@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <easyshippingrules translate="label" module="easyshippingrules">
+            <label>Easy Shipping Rules</label>
+            <sort_order>410</sort_order>
+        </easyshippingrules>
+    </tabs>
+    <sections>
+        <easyshippingrules translate="label" module="easyshippingrules">
+            <label>General</label>
+            <tab>easyshippingrules</tab>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <default_rule translate="label">
+                            <label>Default Rule</label>
+                            <comment>Once assigned the default rule (applyed for custom methods) all estimated shipping will filter first by it.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>easyshippingrules/system_config_source_rule</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </default_rule>
+                    </fields>
+                </general>
+            </groups>
+        </easyshippingrules>
+    </sections>
+</config>

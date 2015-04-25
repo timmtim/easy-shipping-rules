@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MatheusGontijo_EasyShippingRules>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <!-- @TODO: checkar se precisa de todas essas dependencias -->
+                <!-- @TODO: do adminhtml, não? -->
+                <Mage_Rule/>
+                <Mage_Sales/>
+                <Mage_Shipping/>
+            </depends>
+        </MatheusGontijo_EasyShippingRules>
+    </modules>
+</config>

@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+
+<layout>
+    <!-- Carrier controller -->
+    <adminhtml_easyshippingrules_carrier_index>
+        <reference name="content">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_carrier" name="admin.easyshippingrules.carrier"/>
+        </reference>
+    </adminhtml_easyshippingrules_carrier_index>
+
+    <adminhtml_easyshippingrules_carrier_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_carrier_grid" name="admin.easyshippingrules.carrier.grid"/>
+        </block>
+    </adminhtml_easyshippingrules_carrier_grid>
+
+    <adminhtml_easyshippingrules_carrier_edit>
+        <reference name="left">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_carrier_edit_tabs" name="admin.easyshippingrules.carrier.edit.tabs">
+                <block type="easyshippingrules/adminhtml_easyshippingrules_carrier_edit_tab_main" name="admin.easyshippingrules.carrier.edit.tab.main"/>
+                <action method="addTab"><name>main_section</name><block>admin.easyshippingrules.carrier.edit.tab.main</block></action>
+            </block>
+        </reference>
+        <reference name="content">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_carrier_edit" name="admin.easyshippingrules.carrier.edit"/>
+        </reference>
+    </adminhtml_easyshippingrules_carrier_edit>
+
+    <!-- Custom Method controller -->
+    <adminhtml_easyshippingrules_custommethod_index>
+        <reference name="content">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_custommethod" name="admin.easyshippingrules.custommethod"/>
+        </reference>
+    </adminhtml_easyshippingrules_custommethod_index>
+
+    <adminhtml_easyshippingrules_custommethod_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_custommethod_grid" name="admin.easyshippingrules.custommethod.grid"/>
+        </block>
+    </adminhtml_easyshippingrules_custommethod_grid>
+
+    <adminhtml_easyshippingrules_custommethod_edit>
+        <reference name="left">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_custommethod_edit_tabs" name="admin.easyshippingrules.custommethod.edit.tabs"/>
+        </reference>
+        <reference name="content">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_custommethod_edit" name="admin.easyshippingrules.custommethod.edit"/>
+        </reference>
+    </adminhtml_easyshippingrules_custommethod_edit>
+
+    <adminhtml_easyshippingrules_custommethod_rules>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_custommethod_edit_tab_rules" name="admin.easyshippingrules.custommethod.edit.tab.rules"/>
+            <block type="adminhtml/widget_grid_serializer" name="rules_grid_serializer">
+                <reference name="rules_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>admin.easyshippingrules.custommethod.edit.tab.rules</grid_block_name>
+                        <data_callback>getSelectedRules</data_callback>
+                        <hidden_input_name>custom_method[custom_method_rules]</hidden_input_name>
+                        <reload_param_name>custom_method_rules</reload_param_name>
+                    </action>
+                </reference>
+            </block>
+        </block>
+    </adminhtml_easyshippingrules_custommethod_rules>
+
+    <adminhtml_easyshippingrules_custommethod_rulesgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_custommethod_edit_tab_rules" name="admin.easyshippingrules.custommethod.edit.tab.rules"/>
+        </block>
+    </adminhtml_easyshippingrules_custommethod_rulesgrid>
+
+    <!-- Existing Method controller -->
+    <adminhtml_easyshippingrules_existingmethod_index>
+        <reference name="content">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_existingmethod" name="admin.easyshippingrules.existingmethod"/>
+        </reference>
+    </adminhtml_easyshippingrules_existingmethod_index>
+
+    <adminhtml_easyshippingrules_existingmethod_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_existingmethod_grid" name="admin.easyshippingrules.existingmethod.grid"/>
+        </block>
+    </adminhtml_easyshippingrules_existingmethod_grid>
+
+    <adminhtml_easyshippingrules_existingmethod_edit>
+        <reference name="left">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_existingmethod_edit_tabs" name="admin.easyshippingrules.existingmethod.edit.tabs"/>
+        </reference>
+        <reference name="content">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_existingmethod_edit" name="admin.easyshippingrules.existingmethod.edit"/>
+        </reference>
+    </adminhtml_easyshippingrules_existingmethod_edit>
+
+    <adminhtml_easyshippingrules_existingmethod_rules>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_existingmethod_edit_tab_rules" name="admin.easyshippingrules.existingmethod.edit.tab.rules"/>
+            <block type="adminhtml/widget_grid_serializer" name="rules_grid_serializer">
+                <reference name="rules_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>admin.easyshippingrules.existingmethod.edit.tab.rules</grid_block_name>
+                        <data_callback>getSelectedRules</data_callback>
+                        <hidden_input_name>existing_method[existing_method_rules]</hidden_input_name>
+                        <reload_param_name>existing_method_rules</reload_param_name>
+                    </action>
+                </reference>
+            </block>
+        </block>
+    </adminhtml_easyshippingrules_existingmethod_rules>
+
+    <adminhtml_easyshippingrules_existingmethod_rulesgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_existingmethod_edit_tab_rules" name="admin.easyshippingrules.existingmethod.edit.tab.rules"/>
+        </block>
+    </adminhtml_easyshippingrules_existingmethod_rulesgrid>
+
+    <!-- Rule controller -->
+    <adminhtml_easyshippingrules_rule_index>
+        <reference name="content">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_rule" name="admin.easyshippingrules.rule"/>
+        </reference>
+    </adminhtml_easyshippingrules_rule_index>
+
+    <adminhtml_easyshippingrules_rule_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_rule_grid" name="admin.easyshippingrules.rule.grid"/>
+        </block>
+    </adminhtml_easyshippingrules_rule_grid>
+
+    <adminhtml_easyshippingrules_rule_edit>
+        <reference name="head">
+            <action method="setCanLoadExtJs"><flag>1</flag></action>
+            <action method="setCanLoadRulesJs"><flag>1</flag></action>
+        </reference>
+        <reference name="left">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_rule_edit_tabs" name="admin.easyshippingrules.rule.edit.tabs">
+                <block type="easyshippingrules/adminhtml_easyshippingrules_rule_edit_tab_main" name="admin.easyshippingrules.rule.edit.tab.main"/>
+                <block type="easyshippingrules/adminhtml_easyshippingrules_rule_edit_tab_conditions" name="admin.easyshippingrules.rule.edit.tab.conditions"/>
+                <block type="easyshippingrules/adminhtml_easyshippingrules_rule_edit_tab_actions" name="admin.easyshippingrules.rule.edit.tab.actions"/>
+                <action method="addTab"><name>main_section</name><block>admin.easyshippingrules.rule.edit.tab.main</block></action>
+                <action method="addTab"><name>conditions_section</name><block>admin.easyshippingrules.rule.edit.tab.conditions</block></action>
+                <action method="addTab"><name>actions_section</name><block>admin.easyshippingrules.rule.edit.tab.actions</block></action>
+            </block>
+        </reference>
+        <reference name="content">
+            <block type="easyshippingrules/adminhtml_easyshippingrules_rule_edit" name="admin.easyshippingrules.rule.edit"/>
+        </reference>
+    </adminhtml_easyshippingrules_rule_edit>
+</layout>

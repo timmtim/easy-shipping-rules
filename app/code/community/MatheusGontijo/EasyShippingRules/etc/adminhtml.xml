@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <easyshippingrules translate="title" module="easyshippingrules">
+            <title>Easy Shipping Rules</title>
+            <sort_order>50</sort_order>
+            <children>
+                <carrier translate="title" module="easyshippingrules">
+                    <title>Carriers</title>
+                    <action>adminhtml/easyshippingrules_carrier/</action>
+                </carrier>
+            </children>
+            <children>
+                <custommethod translate="title" module="easyshippingrules">
+                    <title>Custom Methods</title>
+                    <action>adminhtml/easyshippingrules_custommethod/</action>
+                </custommethod>
+            </children>
+            <children>
+                <existingmethod translate="title" module="easyshippingrules">
+                    <title>Existing Methods</title>
+                    <action>adminhtml/easyshippingrules_existingmethod/</action>
+                </existingmethod>
+            </children>
+            <children>
+                <rule translate="title" module="easyshippingrules">
+                    <title>Rules</title>
+                    <action>adminhtml/easyshippingrules_rule/</action>
+                </rule>
+            </children>
+        </easyshippingrules>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <easyshippingrules translate="title" module="easyshippingrules">
+                        <title>Easy Shipping Rules</title>
+                        <sort_order>50</sort_order>
+                        <children>
+                            <carrier translate="title" module="easyshippingrules">
+                                <title>Carriers</title>
+                            </carrier>
+                        </children>
+                        <children>
+                            <custommethod translate="title" module="easyshippingrules">
+                                <title>Custom Methods</title>
+                            </custommethod>
+                        </children>
+                        <children>
+                            <existingmethod translate="title" module="easyshippingrules">
+                                <title>Existing Methods</title>
+                            </existingmethod>
+                        </children>
+                        <children>
+                            <rule translate="title" module="easyshippingrules">
+                                <title>Rules</title>
+                            </rule>
+                        </children>
+                    </easyshippingrules>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <easyshippingrules translate="title" module="easyshippingrules">
+                                        <title>Easy Shipping Rules</title>
+                                    </easyshippingrules>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
