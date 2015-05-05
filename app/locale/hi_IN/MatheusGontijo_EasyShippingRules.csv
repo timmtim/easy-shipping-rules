@@ -6,9 +6,9 @@
 "Add Rule","नियम जोड़ें"
 "All Shipping Methods","सभी शिपिंग पद्धतियां"
 "An error occurred while saving the carrier data. Please review the log and try again.","वाहक डेटा सहेजने के दौरान एक त्रुटि हुई। लॉग फ़ाइल की समीक्षा करें और पुन: प्रयास करें।"
-"An error occurred while updating the carrier(s) status.",
+"An error occurred while updating the carrier(s) status.","वाहक की स्थिति को अपडेट करते समय एक त्रुटि हुई।"
 "Apply the shipping rule only if the following conditions are met (leave blank for all products)","नियम लागू करें यदि निम्न स्थितियों से मुलाकात कर रहे हैं (सभी उत्पादों के लिए खाली छोड़ दें)"
-"Are you sure?",
+"Are you sure?","सुनिश्चित करें कि आप कर रहे हैं?"
 "between","के बीच"
 "Carrier","वाहक"
 "Carrier Information","वाहक सूचना"
@@ -17,7 +17,7 @@
 "Carriers and Shipping Methods","वाहक और शिपिंग पद्धतियां"
 "Cart Attribute","टोकरी गुण"
 "Cart Item Attribute","टोकरी आइटम के गुण"
-"Change status",
+"Change status","स्थिति बदलें"
 "Conditions","स्थितियां"
 "Conditions combination","स्थितियां के संयोजन"
 "Created At","बजे बनाया गया"
@@ -43,8 +43,8 @@
 "General Information","सामान्य जानकारी"
 "Hide","छिपाएँ"
 "ID","आईडी"
-"is not valid",
-"is valid",
+"is not valid","वैध नही है"
+"is valid","मान्य है"
 "Leave blank to keep current Carrier Name","वर्तमान वाहक का नाम रखने के लिए खाली छोड़ें"
 "Leave blank to keep current Shipping Method Name","वर्तमान शिपिंग विधि का नाम रखने के लिए खाली छोड़ें"
 "Method Name","विधि का नाम"
@@ -55,15 +55,15 @@
 "New Shipping Rule","नई शिपिंग नियम"
 "not between","इसके बीच नहीं"
 "Overwrite","ओवरराइट"
-"Percentage (based on rate)",
+"Percentage (based on rate)","प्रतिशत (दर के आधार पर)"
 "Percentage (based on subtotal)","प्रतिशत (उप-योग के आधार पर)"
-"Please select carrier(s).",
+"Please select carrier(s).","वाहक (एस) का चयन करें।"
 "Position","स्थान"
 "Price / Percentage","मूल्य / प्रतिशतता"
 "Price Action","मूल्य लड़ाई"
 "Product Attribute","उत्पाद गुण"
 "Product attribute combination","उत्पाद विशेषता संयोजन"
-"Programmatic Method",
+"Programmatic Method","प्रोग्रामेटिक विधि"
 "Rule Name","नियम का नाम"
 "Rules","नियमों"
 "Set this value for replacing rules' price / percentage","कीमत / प्रतिशत की जगह के लिए यह मान सेट"
