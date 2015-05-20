@@ -27,6 +27,11 @@
                     <express_review>MatheusGontijo_EasyShippingRules_Block_Paypal_Express_Review</express_review>
                 </rewrite>
             </paypal>
+            <onestepcheckout>
+                <rewrite>
+                    <onestep_form_shippingmethod>MatheusGontijo_EasyShippingRules_Block_Onestepcheckout_Onestep_Form_Shippingmethod</onestep_form_shippingmethod>
+                </rewrite>
+            </onestepcheckout>
         </blocks>
         <helpers>
             <easyshippingrules>
