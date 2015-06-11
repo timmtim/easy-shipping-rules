@@ -4,7 +4,7 @@ Flexibility in Magento eCommerce Shipping.
 
 ## Why use that?
 
-If you want to adding new shipping rules in Magento in an easy way and no writting any code, then use that.
+If you want to adding new shipping rules in Magento in an easy way and no writting any code, then use that. Please, watch [this quick video for more information](https://www.youtube.com/watch?v=QxRpQwl0cEc).
 
 ## Contributing
 
